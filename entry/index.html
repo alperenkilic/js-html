@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!--- comment line--->
+
+</head>
+
+<body>
+    <p>
+        test yazısı
+    </p>
+
+    <script>
+
+        function calisan(ad, soyad, numara) {
+            this.ad = ad;
+            this.soyad = soyad;
+            this.numara = numara;
+            this.bilgigöster = function () {
+                return ("ad:" + this.ad + "\nsoyad:" +  this.soyad + "\nnumara:" +   this.numara);
+            }
+        }
+
+        var calisan1 = new  calisan("ahmet", "yılmaz", "12345");
+        var calisan2 = new  calisan("mehmet", "yılmaz", "54321");
+        console.log(calisan1.bilgigöster());
+        console.log(calisan2.bilgigöster());
+    </script>
+</body>
+
+</html>
